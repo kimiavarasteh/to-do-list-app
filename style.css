@@ -45,6 +45,23 @@ background: #b6b2b7;
 border-radius: 30px;
 padding-left : 20px; 
 margin-bottom: 10px;
+}
 
+input{
+  flex: 1; 
+  border: none; 
+  outline: none; 
+  background: transparent;
+  padding: 10px; 
+}
 
+button{
+  border: none;
+  outline: none; 
+  padding: 16px 50px; 
+  background: #b9c3f8; 
+  border-radius: 40px;
+  color: #fff; 
+  font-size: 16px; 
+  cursor: pointer;
 }
