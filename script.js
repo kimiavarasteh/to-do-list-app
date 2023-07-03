@@ -22,14 +22,28 @@ function addTask() {
 
   }
   inputBox.value = ""; 
+  saveList(); 
 }
 
 listContainer.addEventListener("click", function (e) {
   if (e.target.tagName == "LI") {
     e.target.classList.toggle("checked"); 
+    saveList();
   }
 
   else if (e.target.tagName == "SPAN") {
     e.target.parentElement.remove(); 
+    saveList();
   }
 }, false); 
+
+function saveList() {
+  localStorage.setItem("data", listContainer.innerHTML)
+}
+
+function showData() {
+  listContainer.innerHTML = localStorage.getItem("data"); 
+
+}
+
+showData(); 
